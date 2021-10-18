@@ -1,0 +1,97 @@
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"  xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/myLayout"
+    android:stretchColumns="0"
+    android:layout_height="match_parent"
+    android:maxLines="1"
+    tools:ignore="Deprecated"
+    android:layout_width="wrap_content">
+    <EditText
+        android:id="@+id/editsalary"
+        android:inputType="number"
+        android:layout_x="187dp"
+        android:layout_y="153dp"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/btnViewAll"
+        android:layout_toRightOf="@+id/btnAdd"
+        android:layout_toEndOf="@+id/btnAdd"
+        android:layout_marginBottom="44dp" />
+    <EditText
+        android:id="@+id/editName"
+        android:inputType="text"
+        android:layout_x="187dp"
+        android:layout_y="105dp"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/textView5"  android:layout_toRightOf="@+id/editEmpid"  android:layout_toEndOf="@+id/editEmpid" />
+    <TextView
+        android:text="@string/name"
+        android:layout_x="31dp"
+        android:layout_y="116dp"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"  android:layout_above="@+id/btnModify"  android:layout_alignRight="@+id/btnDelete"  android:layout_alignEnd="@+id/btnDelete"  android:layout_marginBottom="63dp" />
+    <TextView android:text="@string/empid"  android:layout_x="30dp"
+        android:layout_y="69dp"
+        android:layout_width="wrap_content"  android:layout_height="wrap_content"  android:layout_marginTop="22dp"
+        android:layout_below="@+id/textView4"  android:layout_alignRight="@+id/textView5"  android:layout_alignEnd="@+id/textView5" />
+    <TextView
+        android:text="@string/title"
+        android:layout_x="138dp"
+        android:layout_y="20dp"
+        android:layout_width="wrap_content"  android:layout_height="wrap_content"  android:layout_alignBaseline="@+id/editName"  android:layout_alignBottom="@+id/editName"  android:layout_toLeftOf="@+id/editsalary"  android:layout_toStartOf="@+id/editsalary" />
+    <TextView
+        android:text="@string/salary"
+        android:layout_x="30dp"
+        android:layout_y="163dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"  android:layout_above="@+id/btnModify"  android:layout_toLeftOf="@+id/textView4"  android:layout_toStartOf="@+id/textView4" />
+    <EditText
+        android:id="@+id/editEmpid"
+        android:inputType="number"
+        android:layout_x="187dp"
+        android:layout_y="50dp"
+        android:layout_marginTop="19dp"  android:layout_width="129dp"
+        android:layout_height="wrap_content"  android:layout_alignTop="@+id/btnViewAll"  android:layout_toLeftOf="@+id/btnView"  android:layout_toStartOf="@+id/btnView" />
+    <Button
+        android:id="@+id/btnDelete"
+        android:text="@string/delete"
+        android:layout_x="195dp"
+        android:layout_y="199dp"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"  android:layout_below="@+id/editEmpid"  android:layout_alignParentRight="true"  android:layout_alignParentEnd="true"  android:layout_marginTop="12dp" />
+    <Button
+        android:id="@+id/btnAdd"
+        android:text="@string/add"
+        android:layout_x="43dp"
+        android:layout_y="198dp"
+        android:layout_marginBottom="13dp"  android:layout_alignBottom="@+id/editEmpid"  android:layout_toRightOf="@+id/btnDelete"  android:layout_toEndOf="@+id/btnDelete"  android:layout_width="130dp"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btnModify"
+        android:text="@string/modify"
+        android:layout_x="42dp"
+        android:layout_y="256dp"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"  android:layout_above="@+id/editsalary"  android:layout_alignLeft="@+id/editEmpid"
+        android:layout_alignStart="@+id/editEmpid" />
+    <Button
+        android:id="@+id/btnView"
+        android:text="@string/view"
+        android:layout_x="194dp"
+        android:layout_y="256dp"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnDelete"  android:layout_alignBottom="@+id/btnDelete"  android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="52dp"
+        android:layout_marginStart="52dp" />
+    <Button
+        android:id="@+id/btnViewAll"
+        android:text="@string/view_all"
+        android:layout_x="100dp"
+        android:layout_y="305dp"
+        android:layout_marginBottom="151dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/btnDelete"  android:layout_toEndOf="@+id/btnDelete" /> </AbsoluteLayout>
